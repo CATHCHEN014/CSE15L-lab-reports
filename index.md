@@ -5,7 +5,7 @@
 
 > hello, world
 
-[Link](https://cathchen014.github.io/CSE15L-lab-reports/Lab2.html)
+[Lab report Link](lab-report-1-week-2.html)
 
 [Link](https://niema.net/)
 
