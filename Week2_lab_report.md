@@ -1,7 +1,7 @@
 # Week 2 Lab Report
 ## Tutorial for incoming 15L students
 
->**How to log into a course-specific account on ieng6**
+**How to log into a course-specific account on ieng6**
 
 ### Part 1. Installing VScode
  To start, I went to [VScode](https://code.visualstudio.com/) to download VScode on my laptop. 
@@ -34,7 +34,8 @@
    
    ```ls <directory>```, and ```<directory>``` is ```/home/linux/ieng6/cs15lwi22abc```, where ```abc``` is
    one of the other group members' username
-   > To log out of the remote server in the terminal, I just typed ```Ctrl-D``` or ran the command ```exit```.
+   
+   To log out of the remote server in the terminal, I just typed ```Ctrl-D``` or ran the command ```exit```.
 
    ![image](commands.png)
    
@@ -102,8 +103,8 @@
   This step created two new files on my system: the private key, which is in a file ```id_rsa```;
      and the public key, which is in a file ```id_rsa.pub```, stored in the ```.ssh``` directory on
      my computer. Then, I typed the following commands in my terminal (shown in my screenshot):
-  > I was required to typed in my password to confirm before I could use the ssh without typing my
-  > password everytime in the future.
+  
+  I was required to typed in my password to confirm before I could use the ssh without typing my password everytime in the future.
      
 
    ![image](scp1.png)
@@ -116,7 +117,8 @@
     it saved me some time while running all the codes. Besides, by adding ```ls``` immediately after the command
     of ```ssh```, I was able to get the ```ls``` immediately without waiting to log in and then typing the command
     after.
-   >In this part, we were just coming up with more clever and time saving process to run the commands.
+   
+   In this part, we were just coming up with more clever and time saving process to run the commands.
 
 
   ![image](morepleasant1.png)
