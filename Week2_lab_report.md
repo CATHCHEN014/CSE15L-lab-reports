@@ -11,7 +11,7 @@
   
   <br/>
   
- ### Part 2. Remotely Connecting
+### Part 2. Remotely Connecting
   After setting up my VScode, I installed a program called [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) 
   since I'm on Windows. Then I looked up my [course-specific account](https://sdacs.ucsd.edu/~icc/index.php) 
   for CSE15L and changed my password for my course-specific account so I could use it after. It took up to 5
@@ -22,7 +22,7 @@
   
   <br/>
   
-  ### Part 3. Trying Some Commands
+### Part 3. Trying Some Commands
    After connecting to a remote host, I tried some specific useful commands:
    ```cd~```, stands for "change directory"
    
@@ -41,7 +41,7 @@
    
    <br/>
      
-   ### Part 4. Moving Files with scp
+### Part 4. Moving Files with scp
    
    In this part, I used the command ```scp``` to copy a file (or many files) from my laptop to a remote computer, 
     which will aways run it from the client (Reminder: it's from my computer, not logged into ```ieng6```). I created
@@ -72,7 +72,7 @@
    <br/>
    
    
-   ### Part 5. Setting an SSH Key
+### Part 5. Setting an SSH Key
    We don't need to type in our password to log into ieng6 if we do the following steps. At first, I run
     the following commands in my terminal:
     
@@ -111,7 +111,7 @@
    
    <br/>
    
-   ### Part 6. Optimizing Remote Running
+### Part 6. Optimizing Remote Running
    I ran multiple commands at the same time in this part. By using semicolons to run multiple commands,
     it saved me some time while running all the codes. Besides, by adding ```ls``` immediately after the command
     of ```ssh```, I was able to get the ```ls``` immediately without waiting to log in and then typing the command
@@ -124,6 +124,7 @@
    
    
    
-   ### By Catherine Chen
-   ### 1/13/2022 :)
+### By Catherine Chen
+
+### 1/13/2022 :)
    
