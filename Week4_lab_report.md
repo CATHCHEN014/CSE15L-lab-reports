@@ -10,6 +10,7 @@ three code changes that our group worked on in Lab 3
 Here is the screenshot of the code change difference from Github. In this 
 file, we basically added a few lines of an if statement (from line 22 to line 24) which makes
 a difference from the origin code.
+
 ![Image](https://github.com/CATHCHEN014/markdown-parse/blob/main/code1.png)
 
 **2. Link to the test file**
@@ -18,6 +19,7 @@ Here is the [test2.md](https://github.com/CATHCHEN014/markdown-parse/blob/main/t
 for a failure-inducing input that prompted us to make that change above. 
 We created a new test2.md which includes two pseudo links (a website link 
 and an image link). However, we don't really want the image link in our output.
+
 ![Image](https://github.com/CATHCHEN014/markdown-parse/blob/main/test1.png)
 
 **3. The symptom of failure-inducing input**
