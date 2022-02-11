@@ -40,10 +40,11 @@ ssh ieng6
 
 ## Step 4
 
-Here's an scp command copying a file to my account using just the alias ```ieng6``` that I chose. Here I chose to copy from ```markdown-parse``` and I'm able to only type my alias ```ieng6``` without typing a long command.
+Here's an scp command copying a file to my account using just the alias ```ieng6``` that I chose. Here I chose to copy ```MarkdownParse.java``` and I'm able to only type my alias ```ieng6``` without typing a long command. The java file is now copied to the server now and we can confirm it by logging into our account and check if the java file is there.
 
-![Image](scp.png)
-![Image](scp2.png)
+![Image](scpjava.png)
+
+
 
 <br/>
 
