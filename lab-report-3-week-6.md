@@ -14,7 +14,7 @@ I created the ```config``` file from VSCode and then I dragged it into my ```.ss
 ![Image](configfile.png)
 ![Image](folder.png)
 
-</br>
+<br/>
 
 ## Step 2
 
@@ -26,7 +26,7 @@ Host ieng6
 ```
 ![Image](configfile.png)
 
-</br>
+<br/>
 
 ## Step 3
 
@@ -36,7 +36,7 @@ ssh ieng6
 ```
 ![Image](login.png)
 
-</br>
+<br/>
 
 ## Step 4
 
@@ -45,7 +45,7 @@ Here's an scp command copying a file to my account using just the alias ```ieng6
 ![Image](scp.png)
 ![Image](scp2.png)
 
-</br>
+<br/>
 
 ### By Catherine Chen
 
