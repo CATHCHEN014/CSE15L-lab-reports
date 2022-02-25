@@ -19,36 +19,29 @@ valid link that could be clicked on when I checked on
 
 Here is how I turned it into a test in ```MarkdownParseTest.java```.
 ![Image](snippet1My.png)
+
 ### Test for my MarkdownParse
 My ```MarkdownParse.java``` failed the test as I ran the JUnit test.
 ![Image](snippet1fail.png)
 
+**Possible changes to make it pass**
 
+I think if I add two more if statement within the getLinks() method, it can 
+actually work. First, I can add an if statement to check whether ```[``` appears 
+at the start of the line - if there's any special characters, such as ``` ` ```, 
+then it shouldn't be a valid link output. Second, I can add an if statement to check 
+if there's another ```]``` after the first ```]``` - if there is another ```]``` after the first 
+```]```, then nextCloseBracket should be reset to the close bracket that appears last.
 
 ### Test for the other group's MarkdownParse
+Here's the test for the other group's ```MarkdownParse.java```.
+![Image](snippet1O.png)
+
+And they also failed for the same reason as our group has.
+![Image](snippet1OF.png)
 
 
 <br/>
-
-Your report should include:
-
-A link to your markdown-parse repository and a link to the one you reviewed
-
-For each test above:
-
-Decide on what it should produce by using either VScode preview or the CommonMark demo site
-
-Showing the code in MarkdownParseTest.java for how you turned it into a test
-
-For your implementation, the corresponding output when running the tests; if it passed, say so. 
-
-If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-For the implementation you reviewed, the corresponding output when running the tests; 
-if it passed, 
-say so. If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-Answer the following questions with 2-3 sentences each:
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and 
-all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 ## Snippet 2
 ```
@@ -58,6 +51,36 @@ all related cases that use inline code with backticks? If yes, describe the code
 
 [some escaped \[ brackets \]](example.com)
 ```
+For this snippet, the correct output should be ```b.com```, 
+```a.com(())```, and ```example.com``` since they are the only three 
+valid link that could be clicked on when I checked on 
+[the CommonMark demo site](https://spec.commonmark.org/dingus/).
+
+Here is how I turned it into a test in ```MarkdownParseTest.java```.
+![Image](snippet2My.png)
+
+### Test for my MarkdownParse
+My ```MarkdownParse.java``` failed the test as I ran the JUnit test.
+![Image](snippet2fail.png)
+
+**Possible changes to make it pass**
+
+Similar to the problem in ```snippet1```, I can add an if statement to check 
+if there's another ```]``` or ```)``` after the first ```]``` 
+or ```)``` - if there is another ```]``` or ```)``` after the first 
+```]``` or ```)```, then nextCloseBracket or the nextCloseParen 
+should be reset to the close bracket or parenthesis that appears last - 
+to include the whole correct link within the open parenthesis and the close parenthesis.
+If my code is able to check for the correct close bracket and close parenthesis, ```snippet2``` 
+will be okay to pass since it seems like ```snippet2``` mainly tests on close parenthesis and 
+close brackets.
+
+### Test for the other group's MarkdownParse
+Here's the test for the other group's ```MarkdownParse.java```.
+![Image](snippet2O.png)
+
+And they also failed for a similar reason as our group has.
+![Image](snippet2OF.png)
 
 <br/>
 
@@ -89,26 +112,29 @@ And there's still some more text after that.
 And then there's more text
 ```
 
-Your report should include:
+For this snippet, the correct output should be ```https://ucsd-cse15l-w22.github.io/``` 
+since it is the only valid link that could be clicked on when I checked on 
+[the CommonMark demo site](https://spec.commonmark.org/dingus/).
 
-A link to your markdown-parse repository and a link to the one you reviewed
+Here is how I turned it into a test in ```MarkdownParseTest.java```.
+![Image](snippet3My.png)
 
-For each test above:
+### Test for my MarkdownParse
+My ```MarkdownParse.java``` failed the test as I ran the JUnit test.
+![Image](snippet3fail.png)
 
-Decide on what it should produce by using either VScode preview or the CommonMark demo site
+**Possible changes to make it pass**
 
-Showing the code in MarkdownParseTest.java for how you turned it into a test
 
-For your implementation, the corresponding output when running the tests; if it passed, say so. 
+### Test for the other group's MarkdownParse
+Here's the test for the other group's ```MarkdownParse.java```.
+![Image](snippet3O.png)
 
-If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-For the implementation you reviewed, the corresponding output when running the tests; if it passed, 
-say so. If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-Answer the following questions with 2-3 sentences each:
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and 
-all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and 
-all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change.
-If not, describe why it would be a more involved change.
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and 
-all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+They also failed ```snippet3```.
+![Image](snippet3OF.png)
+
+
+<br/>
+
+### Catherine Chen
+### 2/24/2022
