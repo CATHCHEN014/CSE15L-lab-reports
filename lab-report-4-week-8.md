@@ -125,6 +125,16 @@ My ```MarkdownParse.java``` failed the test as I ran the JUnit test.
 
 **Possible changes to make it pass**
 
+It might be hard to quickly fix the code within 10 lines. 
+The JUnit test didn't give me any output so it seems like our code has an infinite loop 
+when I test ```snippet3``` on ```MarkdownParse.java```. Our code failed because we added an 
+if statement to check if there's white space (``` ```) within the parenthesis. Since the links in 
+```snippet3``` are mostly not on the same line with the brackets, there is definitely white space 
+between the parenthesis, which possibly leads to the infinite loop. If I remove that if statement, 
+maybe our code is able to run. However, it will give an exception of index out of bound. Therefore, 
+we need to fix the index out of bound exception before we actually fix the code to give the right 
+output. After that, we need to figure out how to get the link if it is not on the same line as 
+the brackets. Therefore, it would be a more involved change.
 
 ### Test for the other group's MarkdownParse
 Here's the test for the other group's ```MarkdownParse.java```.
